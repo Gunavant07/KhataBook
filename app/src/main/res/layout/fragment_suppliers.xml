@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.homefm.Suppliers">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl3"
+        android:layout_marginBottom="60dp">
+    </androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/purple_500"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardsearch"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="50dp"
+            android:layout_below="@id/card1"
+            android:layout_marginHorizontal="15dp">
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFFFFF"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp">
+
+                <RelativeLayout
+                    android:id="@+id/rlayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ruppees"
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/rupee1"
+                            app:tint="#1AFF00" />
+
+                        <TextView
+                            android:id="@+id/givemoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@+id/ruppees"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:textColor="#1AFF00"
+                            android:textColorHint="#1AFF00"
+                            android:textSize="25dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl1"
+                        android:gravity="center"
+                        android:text="You will give"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <RelativeLayout
+                        android:id="@+id/rl2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ruppees1"
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/rupee1"
+                            app:tint="#FF0000" />
+
+                        <TextView
+                            android:id="@+id/gotmoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@+id/ruppees1"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:textColor="#FF0000"
+                            android:textColorHint="#FF0000"
+                            android:textSize="25dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl2"
+                        android:gravity="center"
+                        android:text="You will got"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true">
+
+                    <ImageView
+                        android:id="@+id/arrow"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/report"
+                        android:src="@drawable/arrow"
+                        app:tint="#003FF5" />
+
+                    <TextView
+                        android:id="@+id/report"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center"
+                        android:text="View Report"
+                        android:textColor="#0041FF"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/spadd"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="ADD Supplier"
+            android:textColor="@color/white"
+            app:icon="@drawable/adduser"
+            app:iconTint="@color/white"
+            app:backgroundTint="#1E8E00">
+        </com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.Homefragment">
+
+    <RelativeLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rly1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/purple_500">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp">
+        </androidx.viewpager.widget.ViewPager>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabbar"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="#6200ED"
+            app:tabTextColor="#FFFFFF"
+            app:tabIndicatorGravity="bottom"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorHeight="3dp"
+            />
+    </RelativeLayout>
+</FrameLayout>

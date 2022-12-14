@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Viewdetails">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.navigation.NavigationView
+                android:id="@+id/nav_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="start"
+                app:menu="@menu/menudrawer" />
+        </androidx.drawerlayout.widget.DrawerLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/back"
+            android:layout_marginTop="10dp"/>
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/menu"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl1"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#CFE9FD"
+        app:cardUseCompatPadding="true">
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Name"
+            android:textSize="25dp"/>
+       <RelativeLayout
+           android:id="@+id/rl2"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_below="@+id/txtname">
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile"
+            android:textSize="25dp"/>
+       <ImageView
+           android:id="@+id/call"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@drawable/call"
+           android:layout_centerVertical="true"
+           android:layout_alignParentEnd="true"
+           android:layout_marginTop="10dp"
+           app:tint="#1AFF00" />
+       </RelativeLayout>
+        <TextView
+            android:id="@+id/item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl2"
+            android:hint="Item"
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item"
+            android:hint="Quantity"
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quantity"
+            android:hint="Date"
+            android:textSize="25dp" />
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

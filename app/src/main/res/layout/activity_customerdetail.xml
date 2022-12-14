@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Customerdetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="100dp">
+
+            <ImageView
+                android:id="@+id/imguser"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/profile" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cardview"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#FFFFFF"
+            app:cardCornerRadius="15dp">
+
+            <EditText
+                android:id="@+id/edtname1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/cardview"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:hint="Customer name"
+                android:textColorHint="#706E6E"
+                android:textSize="25dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/card2"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#FFFFFF"
+            app:cardCornerRadius="15dp">
+
+            <EditText
+                android:id="@+id/edtmobile1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/card2"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:hint="Mobile Number"
+                android:textColorHint="#706E6E"
+                android:textSize="25dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/card3"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#FFFFFF"
+            app:cardCornerRadius="15dp">
+
+            <EditText
+                android:id="@+id/edtitem1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/card2"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:hint="Item Name"
+                android:textColorHint="#706E6E"
+                android:textSize="25dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/card4"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#FFFFFF"
+            app:cardCornerRadius="15dp">
+
+            <EditText
+                android:id="@+id/edtquantity1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/edtitem"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:hint="Quantity"
+                android:textColorHint="#706E6E"
+                android:textSize="25dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/card5"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#FFFFFF"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:id="@+id/rlv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/edtquantity">
+
+                <TextView
+                    android:id="@+id/txtdate1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical"
+                    android:hint="Date"
+                    android:textColorHint="#706E6E"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:id="@+id/imgCalendar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/calender"
+                    app:tint="@color/black" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdgive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                android:checked="true"
+                android:text="Give"
+                android:textColor="#2DFF00"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rdgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Got"
+                android:textColor="#FF0000"
+                android:textSize="20dp" />
+        </RadioGroup>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rg1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#FFFFFF"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:id="@+id/rly2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card5"
+                android:gravity="center">
+                <EditText
+                    android:id="@+id/edtamount1"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:hint="Enter Amount"
+                    android:textColor="#3E3E3E"
+                    android:inputType="number"
+                    android:textColorHint="#706E6E"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btndone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="done"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</RelativeLayout>
